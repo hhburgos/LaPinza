@@ -66,13 +66,13 @@ public class BuyerShopFragment extends Fragment {
     }
 
     private void makeExplore() {
-        Category category = new Category("Shoes", "Upto 50% OFF", R.drawable.placeholder_large);
+        Category category = new Category("Organización", "Define tu identidad", R.drawable.placeholder_large);
         categoryList.add(category);
-        category = new Category("Bag", "Upto 70% OFF", R.drawable.placeholder_large);
+        category = new Category("Torneo", "Organiza y optimiza", R.drawable.placeholder_large);
         categoryList.add(category);
-        category = new Category("Pant", "Upto 80% OFF", R.drawable.placeholder_large);
+        category = new Category("Liga", "Tabla de puntos", R.drawable.placeholder_large);
         categoryList.add(category);
-        category = new Category("T-Shirt", "Upto 30% OFF", R.drawable.placeholder_large);
+        category = new Category("Formato", "Upto 30% OFF", R.drawable.placeholder_large);
         categoryList.add(category);
         category = new Category("Jacket", "Upto 40% OFF", R.drawable.placeholder_large);
         categoryList.add(category);

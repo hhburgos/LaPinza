@@ -3,19 +3,19 @@
 
     <item
         android:id="@+id/nav_shop"
-        android:title="Home"
+        android:title="@string/inicio"
         android:icon="@drawable/ic_shop"/>
     <item
         android:id="@+id/nav_explore"
-        android:title="@string/shop"
+        android:title="@string/crear"
         android:icon="@drawable/ic_explore"/>
     <item
         android:id="@+id/nav_brand"
-        android:title="Wishlist"
+        android:title="@string/bandeja"
         android:icon="@drawable/ic_brand" />
     <item
         android:id="@+id/nav_profile"
-        android:title="Profile"
+        android:title="@string/perfil"
         android:icon="@drawable/ic_profile" />
 
 </menu>

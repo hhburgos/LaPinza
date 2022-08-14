@@ -210,7 +210,7 @@ public class BuyerHomeFragment extends Fragment {
 
     private void categories() {
         Category category = new Category(
-                "T-Shirt",
+                "Torneo",
                 "",
                 R.drawable.ic_t_shirt
         );
@@ -218,7 +218,7 @@ public class BuyerHomeFragment extends Fragment {
         categories.add(category);
 
         category = new Category(
-                "Bag",
+                "Organizacion",
                 "",
                 R.drawable.ic_shoppingbag
         );
