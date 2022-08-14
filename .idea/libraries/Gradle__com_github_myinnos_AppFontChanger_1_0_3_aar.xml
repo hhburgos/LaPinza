@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.myinnos:AppFontChanger:1.0.3@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/b9cc827243f2ba24792ef0290268032f/jetified-AppFontChanger-1.0.3/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/b9cc827243f2ba24792ef0290268032f/jetified-AppFontChanger-1.0.3/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/b9cc827243f2ba24792ef0290268032f/jetified-AppFontChanger-1.0.3/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.myinnos/AppFontChanger/1.0.3/4773a681992d30eeaab15b0f43c5cae69c4e88e/AppFontChanger-1.0.3-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.myinnos/AppFontChanger/1.0.3/bbaa09e1880a282ed5c14ed44590e66d9b7d7efd/AppFontChanger-1.0.3-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

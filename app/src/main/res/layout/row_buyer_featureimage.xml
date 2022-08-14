@@ -1,0 +1,57 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/sign_in_up"
+            tools:ignore="ContentDescription" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#80000000"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/spring_collection"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:textSize="15sp"
+            android:textColor="@android:color/white"
+            android:layout_centerInParent="true"
+            android:layout_above="@id/tvDiscountSlogan"/>
+        <TextView
+            android:id="@+id/tvDiscountSlogan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/_20_off"
+            android:textSize="28sp"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_centerInParent="true"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/for_selected_spring_style"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:textSize="18sp"
+            android:textColor="@android:color/white"
+            android:layout_centerInParent="true"
+            android:layout_below="@id/tvDiscountSlogan"/>
+    </RelativeLayout>
+
+
+
+</FrameLayout>

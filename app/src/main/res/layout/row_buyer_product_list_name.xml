@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingTop="@dimen/_5sdp"
+    android:paddingBottom="@dimen/_5sdp"
+    android:paddingStart="@dimen/_8sdp"
+    android:paddingEnd="@dimen/_8sdp">
+
+    <TextView
+        android:id="@+id/text_product_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight=".5"
+        android:text="@string/higher_quality_black_solid_chest_guard_for_men_by_bajrang"
+        android:textColor="@color/colorBlack"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/text_quantity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight=".2"
+        android:gravity="start"
+        android:text="@string/x_2"
+        android:paddingStart="@dimen/_5sdp"
+        android:textColor="@color/colorGrey"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/text_total_price"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight=".3"
+        android:gravity="end"
+        android:text="@string/_6_78"
+        android:textStyle="bold"
+        android:textColor="@color/colorGrey"
+        android:textSize="15sp" />
+</LinearLayout>

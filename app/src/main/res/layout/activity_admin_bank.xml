@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient">
+
+    <include layout="@layout/toolbar" />
+    
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/todo"
+        android:src="@drawable/background_wave"/>
+
+    <LinearLayout
+        android:id="@+id/llBalance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:layout_margin="@dimen/_10sdp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/available_balance"
+            android:textColor="@color/colorBlack"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:gravity="center"
+            android:text="@string/_500_56"
+            android:textColor="@color/colorRed"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/btnSendToBank"
+        android:layout_below="@id/llBalance"
+        android:layout_margin="@dimen/_10sdp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bank_info"
+            android:textColor="@color/colorTheme"
+            android:textStyle="bold"
+            android:textSize="18sp"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorBlack"
+            android:textColorHint="@color/colorBlack"
+            android:theme="@style/SendToBankEditText"
+            android:layout_marginTop="@dimen/_10sdp"
+            app:hintTextColor="@color/colorBlack">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:textSize="15sp"
+                android:text="@string/tom_hardy"
+                android:backgroundTint="@color/colorBlack"
+                android:hint="@string/account_holder_name"
+                android:inputType="text"
+                android:paddingBottom="@dimen/_10sdp"
+                android:textColor="@color/colorBlack"
+                android:textColorHint="@color/colorBlack"
+                android:importantForAutofill="no" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorBlack"
+            android:theme="@style/SendToBankEditText"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:textColorHint="@color/colorBlack"
+            app:hintTextColor="@color/colorBlack">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:textSize="15sp"
+                android:text="@string/bank_of_america"
+                android:backgroundTint="@color/colorBlack"
+                android:hint="@string/bank_name"
+                android:inputType="text"
+                android:paddingBottom="@dimen/_10sdp"
+                android:textColor="@color/colorBlack"
+                android:textColorHint="@color/colorBlack"
+                android:importantForAutofill="no" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorBlack"
+            android:textColorHint="@color/colorBlack"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:theme="@style/SendToBankEditText"
+            app:hintTextColor="@color/colorBlack">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:textSize="15sp"
+                android:backgroundTint="@color/colorBlack"
+                android:hint="@string/branch_code"
+                android:text="@string/sdvlie"
+                android:inputType="numberDecimal"
+                android:paddingBottom="@dimen/_10sdp"
+                android:textColor="@color/colorBlack"
+                android:textColorHint="@color/colorBlack"
+                tools:ignore="Autofill" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorBlack"
+            android:textColorHint="@color/colorBlack"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:theme="@style/SendToBankEditText"
+            app:hintTextColor="@color/colorBlack">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:textSize="15sp"
+                android:backgroundTint="@color/colorBlack"
+                android:hint="@string/account_number"
+                android:text="@string/_1012809823904802384023"
+                android:inputType="numberDecimal"
+                android:paddingBottom="@dimen/_10sdp"
+                android:textColor="@color/colorBlack"
+                android:textColorHint="@color/colorBlack"
+                android:importantForAutofill="no" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorBlack"
+            android:textColorHint="@color/colorBlack"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:theme="@style/SendToBankEditText"
+            app:hintTextColor="@color/colorBlack">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:backgroundTint="@color/colorBlack"
+                android:hint="@string/enter_amount_to_transfer"
+                android:inputType="numberDecimal"
+                android:paddingBottom="@dimen/_10sdp"
+                android:text="@string/_100000"
+                android:textSize="15sp"
+                android:textColor="@color/colorBlack"
+                android:textColorHint="@color/colorBlack"
+                tools:ignore="Autofill" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnSendToBank"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/button_background_dark"
+        android:layout_margin="@dimen/_5sdp"
+        android:text="@string/send_to_bank"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white" />
+</RelativeLayout>
