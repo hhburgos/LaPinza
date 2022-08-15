@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "926580418364",
+    "project_id": "lapinza-9261d",
+    "storage_bucket": "lapinza-9261d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:926580418364:android:33a1d183e53ba50934a039",
+        "android_client_info": {
+          "package_name": "com.cninfotech.template"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "926580418364-eei3h078sblmem0nnrv2dp7fhljtp25p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBElLZGMuFiAx312B4SAyxnyHgggvh513s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "926580418364-eei3h078sblmem0nnrv2dp7fhljtp25p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
