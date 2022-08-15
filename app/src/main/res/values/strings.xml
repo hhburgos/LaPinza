@@ -787,4 +787,15 @@
         <item>Zimbabwe</item>
         <item>Åland Islands</item>
     </string-array>
+
+    <!-- Organization s -->
+    <string name="organization_title_form">ORGANIZATION\nFORM</string>
+    <string name="organization_name">Organization name</string>
+    <string name="organization_name_example">HHEuskadi example</string>
+    <string name="organization_members">Members</string>
+    <string name="organization_members_example">HHPaco</string>
+    <string name="organization_street">Street</string>
+    <string name="organization_street_exapmle">123 Abc, Spain</string>
+    <string name="organization_create">Create\norganization</string>
+    <string name="organization_add_member">ADD</string>
 </resources>

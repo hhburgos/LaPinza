@@ -75,6 +75,10 @@
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateAlwaysHidden|adjustResize|adjustPan"  />
         <activity
+            android:name=".buyer.cart.ui.BuyerFormOrganizationActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize|adjustPan"  />
+        <activity
             android:name=".buyer.product.ui.BuyerSizeSelectorActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateAlwaysHidden|adjustResize|adjustPan" />

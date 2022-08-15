@@ -14,6 +14,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.cninfotech.template.R;
+import com.cninfotech.template.buyer.cart.ui.BuyerFormOrganizationActivity;
 import com.cninfotech.template.buyer.product.ui.BuyerParticularCategoryActivity;
 import com.cninfotech.template.buyer.user.account.AccountActivity;
 import com.cninfotech.template.model.Category;
@@ -61,7 +62,10 @@ public class BuyerCategoryAdapter extends RecyclerView.Adapter<BuyerCategoryAdap
             @Override
             public void onClick(View view) {/*Aquui se hace el llamado cuando una categoria es clickada*/
                 switch (position) {
-                    case 0: Toast.makeText(context, "Sape"+String.valueOf(position), Toast.LENGTH_LONG).show(); break;
+                    case 0:
+                        Intent form_organization_window = new Intent(context, BuyerFormOrganizationActivity.class);
+                        context.startActivity(form_organization_window);
+                        break;
                     case 1: Toast.makeText(context, String.valueOf(position), Toast.LENGTH_LONG).show(); break;
                     case 2: Toast.makeText(context, String.valueOf(position), Toast.LENGTH_LONG).show(); break;
                     case 3: Toast.makeText(context, String.valueOf(position), Toast.LENGTH_LONG).show(); break;
