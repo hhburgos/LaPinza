@@ -2,6 +2,7 @@ package com.cninfotech.template.buyer.dashboard.ui;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -10,6 +11,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.widget.Toolbar;
@@ -49,7 +51,7 @@ public class BuyerShopFragment extends Fragment {
         window.setFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS, WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
 
         androidx.appcompat.widget.Toolbar toolbar = (Toolbar) view.findViewById(R.id.toolbar);
-        toolbar.setTitle("");
+        toolbar.setTitle("sape");
         ((BuyerDashboardActivity)getActivity()).setSupportActionBar(toolbar);
         setHasOptionsMenu(true);
 
@@ -72,14 +74,14 @@ public class BuyerShopFragment extends Fragment {
         categoryList.add(category);
         category = new Category("Liga", "Tabla de puntos", R.drawable.placeholder_large);
         categoryList.add(category);
-        category = new Category("Formato", "Upto 30% OFF", R.drawable.placeholder_large);
+        category = new Category("Formato", "Personaliza las rondas", R.drawable.placeholder_large);
         categoryList.add(category);
-        category = new Category("Jacket", "Upto 40% OFF", R.drawable.placeholder_large);
+        /*category = new Category("Jacket", "Upto 40% OFF", R.drawable.placeholder_large);
         categoryList.add(category);
         category = new Category("Hoodie", "Upto 20% OFF", R.drawable.placeholder_large);
         categoryList.add(category);
         category = new Category("Jockey", "Upto 10% OFF", R.drawable.placeholder_large);
-        categoryList.add(category);
+        categoryList.add(category);*/
         categoryAdapter.notifyDataSetChanged();
     }
     @Override

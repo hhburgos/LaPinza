@@ -1,5 +1,6 @@
 package com.cninfotech.template.buyer.product;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
 import android.view.LayoutInflater;
@@ -7,12 +8,14 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.cninfotech.template.R;
 import com.cninfotech.template.buyer.product.ui.BuyerParticularCategoryActivity;
+import com.cninfotech.template.buyer.user.account.AccountActivity;
 import com.cninfotech.template.model.Category;
 
 import java.util.List;
@@ -49,15 +52,23 @@ public class BuyerCategoryAdapter extends RecyclerView.Adapter<BuyerCategoryAdap
     }
 
     @Override
-    public void onBindViewHolder(@NonNull BuyerCategoryAdapter.MyViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull BuyerCategoryAdapter.MyViewHolder holder, @SuppressLint("RecyclerView") int position) {
         Category category = categoryList.get(position);
         holder.title.setText(category.getCategoryName());
         holder.slogan.setText(category.getCategorySlogan());
         holder.image.setImageResource (category.getCategoryImg());
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
-                context.startActivity(new Intent(context, BuyerParticularCategoryActivity.class));
+            public void onClick(View view) {/*Aquui se hace el llamado cuando una categoria es clickada*/
+                switch (position) {
+                    case 0: Toast.makeText(context, "Sape"+String.valueOf(position), Toast.LENGTH_LONG).show(); break;
+                    case 1: Toast.makeText(context, String.valueOf(position), Toast.LENGTH_LONG).show(); break;
+                    case 2: Toast.makeText(context, String.valueOf(position), Toast.LENGTH_LONG).show(); break;
+                    case 3: Toast.makeText(context, String.valueOf(position), Toast.LENGTH_LONG).show(); break;
+
+                    default: Toast.makeText(context, "La has liado un poco"+String.valueOf(position), Toast.LENGTH_LONG).show();
+                }
+                /*context.startActivity(new Intent(context, AccountActivity.class));*/
             }
         });
     }

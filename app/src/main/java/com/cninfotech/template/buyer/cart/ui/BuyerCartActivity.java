@@ -46,7 +46,7 @@ public class BuyerCartActivity extends AppCompatActivity implements View.OnClick
 
         //Toolbar declaration
         Toolbar toolbar = findViewById(R.id.toolbar);
-        toolbar.setTitle("My Bag");
+        toolbar.setTitle("My Buag");
         setSupportActionBar(toolbar);
         toolbar.setTitleTextColor(Color.parseColor("#000000"));
         Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
@@ -85,7 +85,7 @@ public class BuyerCartActivity extends AppCompatActivity implements View.OnClick
     }
 
     private void makeWishList() {
-        Product product = new Product("Aamayra Fashion House Cream Woolen Kurti For Women",R.drawable.placeholder_small,"$4.99","M","Grey","$3.99","-10%");
+        Product product = new Product("FF Aamayra Fashion House Cream Woolen Kurti For Women",R.drawable.placeholder_small,"$4.99","M","Grey","$3.99","-10%");
         productList.add(product);
         product = new Product("Both Side Winter Fleece Zipper Jacket For Women's By Rc",R.drawable.placeholder_small,"$5.99","L","White","$3.99","-10%");
         productList.add(product);

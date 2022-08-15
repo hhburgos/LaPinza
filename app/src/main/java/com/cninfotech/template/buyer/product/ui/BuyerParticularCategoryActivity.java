@@ -201,7 +201,7 @@ public class BuyerParticularCategoryActivity extends AppCompatActivity implement
 
     private void topTrending() {
         productList.clear();
-        Product product = new Product("Both Side Winter Fleece Zipper Jacket For Women's By Rc", R.drawable.placeholder_large, "$34.99","#808080","$30.99","-10%",3);
+        Product product = new Product("Lokita Both Side Winter Fleece Zipper Jacket For Women's By Rc", R.drawable.placeholder_large, "$34.99","#808080","$30.99","-10%",3);
         productList.add(product);
         product = new Product("Aamayra Fashion House Cream Woolen Kurti For Women", R.drawable.placeholder_large, "$14.99","#808080","","",4.5f);
         productList.add(product);
