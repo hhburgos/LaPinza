@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "926580418364",
+    "firebase_url": "https://lapinza-9261d-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "lapinza-9261d",
+    "storage_bucket": "lapinza-9261d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:926580418364:android:836f70b09eae718b34a039",
+        "android_client_info": {
+          "package_name": "com.cninfotech.template"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "926580418364-eei3h078sblmem0nnrv2dp7fhljtp25p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBElLZGMuFiAx312B4SAyxnyHgggvh513s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "926580418364-eei3h078sblmem0nnrv2dp7fhljtp25p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

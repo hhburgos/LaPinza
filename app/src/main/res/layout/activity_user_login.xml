@@ -57,12 +57,13 @@
             app:hintTextColor="@color/colorWhite">
 
             <EditText
+                android:id="@+id/email_login"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/_10sdp"
                 android:layout_marginBottom="@dimen/_5sdp"
                 android:backgroundTint="@color/colorWhite"
-                android:hint="@string/username"
+                android:hint="@string/email"
                 android:importantForAutofill="no"
                 android:inputType="textEmailAddress"
                 android:paddingBottom="@dimen/_15sdp"
@@ -81,6 +82,7 @@
             app:passwordToggleTint="@color/colorWhite">
 
             <EditText
+                android:id="@+id/password_login"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/_10sdp"

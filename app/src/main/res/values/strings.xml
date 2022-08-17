@@ -559,6 +559,30 @@
     <string name="wooops_cart_is_empty">Wooops!! Cart is Empty</string>
     <string name="looks_like_you_haven_t_added_anything_to_your_cart_yet_you_will_find_many_product_in_our_shop_page">Looks like you haven\'t added anything to your cart yet. You will find many product in our \'Shop\' page.</string>
 
+    <string name="aka_register">Aka</string>
+    <string name="name_register">Name</string>
+    <string name="register_valid_email">Please set valid email</string>
+    <string name="register_valid_name">Please set valid user</string>
+    <string name="register_valid_password">The password must have a length greater than 6</string>
+    <string name="register_valid_aka">Please set valid aka</string>
+    <string name="register_valid">Complete the data</string>
+    <string name="register_ok">Registration ok</string>
+    <string name="register_email_exist">You already have an account with this email</string>
+
+    <string name="login_email">Please put valid email</string>
+    <string name="login_password_lenght">The password must have a length greater than 6</string>
+    <string name="login_valid">Complete the data</string>
+    <string name="login_error">An occurred a error</string>
+
+    <string name="member_alert">Please fill email</string>
+    <string name="email_alert_member">Please set add an existing user</string>
+
+    <string name="organization_validation_name">Please set valid name</string>
+    <string name="organization_validation_street">Please set valid street</string>
+    <string name="organization_members_minimun">Please add 2 member minimun</string>
+    <string name="organization_data_valid">Please set valid data</string>
+    <string name="organization_created_ok">The organization has been created successfully</string>
+
     <string-array name="countries" formatted="false" translatable="false">
         <item>Afghanistan</item>
         <item>Albania</item>
@@ -793,9 +817,12 @@
     <string name="organization_name">Organization name</string>
     <string name="organization_name_example">HHEuskadi example</string>
     <string name="organization_members">Members</string>
+    <string name="organization_members_search">Add Members With Email</string>
     <string name="organization_members_example">HHPaco</string>
     <string name="organization_street">Street</string>
     <string name="organization_street_exapmle">123 Abc, Spain</string>
     <string name="organization_create">Create\norganization</string>
     <string name="organization_add_member">ADD</string>
+    <string name="organization_email_regex">Please set valid email</string>
+    <string name="organization_email_repeat">Don\'t repeat email</string>
 </resources>

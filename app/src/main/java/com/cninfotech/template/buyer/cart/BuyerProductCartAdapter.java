@@ -48,6 +48,7 @@ public class BuyerProductCartAdapter extends RecyclerView.Adapter<BuyerProductCa
         itemView = LayoutInflater.from(parent.getContext())
                 .inflate(R.layout.row_buyer_product_list_name, parent, false);
 
+
         return new MyViewHolder(itemView);
     }
 

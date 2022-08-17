@@ -5,76 +5,43 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
-import android.widget.Button;
-import android.widget.EditText;
-import android.widget.LinearLayout;
-import android.widget.ListView;
-import android.widget.RelativeLayout;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
-import androidx.recyclerview.widget.RecyclerView;
+import androidx.annotation.Nullable;
 
 import com.cninfotech.template.R;
+import com.cninfotech.template.model.Usuario;
 
-import java.util.ArrayList;
 import java.util.List;
 
-public class MemberAdapter extends RecyclerView.Adapter<MemberAdapter.MemberVH> {
-    private List<String> items;
-    private List<String> members;
+public class MemberAdapter extends ArrayAdapter<Usuario> {
     private Context context;
-    public static boolean isExpandible = true;
+    private List<Usuario> dataSet;
 
-    public MemberAdapter(Context context, List<String> items) {
+    public MemberAdapter(@NonNull Context context, List<Usuario> objects) {
+        super(context, R.layout.row_member, objects);
+
         this.context = context;
-        this.items = items;
-
-        this.members = new ArrayList<>();
+        this.dataSet = objects;
     }
 
     @NonNull
     @Override
-    public MemberVH onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.acordion_member, parent, false);
+    public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
+        if (convertView == null)
+            convertView = LayoutInflater.from(this.context).inflate(R.layout.row_member, parent, false);
 
-        return new MemberVH(view);
-    }
+        TextView tvEmail = convertView.findViewById(R.id.textView);
+        ImageView ivRemove = convertView.findViewById(R.id.removeMember);
 
-    @Override
-    public void onBindViewHolder(@NonNull MemberVH holder, int position) {
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this.context, android.R.layout.simple_list_item_1, this.members);
-        holder.listViewMembers.setAdapter(adapter);
+        tvEmail.setText(this.dataSet.get(position).getEmail());
+        ivRemove.setOnClickListener(v -> {
+            this.dataSet.remove(position);
+            MemberAdapter.this.notifyDataSetChanged();
+        });
 
-        holder.accordion.setVisibility(isExpandible ? View.VISIBLE : View.GONE);
-    }
-
-    @Override
-    public int getItemCount() {
-        return this.items.size();
-    }
-
-    public class MemberVH extends RecyclerView.ViewHolder {
-        public EditText organizationMember;
-        public Button btnAddMember;
-        public ListView listViewMembers;
-        public RelativeLayout accordion;
-        public RelativeLayout relative_tile;
-        private LinearLayout linearLayout;
-
-        public MemberVH(@NonNull View itemView) {
-            super(itemView);
-
-            this.organizationMember = itemView.findViewById(R.id.input_organization_name);
-            this.btnAddMember = itemView.findViewById(R.id.btn_addmember);
-            this.listViewMembers = itemView.findViewById(R.id.lvMembers);
-            this.accordion = itemView.findViewById(R.id.expandable_layout);
-            this.linearLayout = itemView.findViewById(R.id.linear_layout);
-            this.relative_tile = itemView.findViewById(R.id.relative_tile);
-
-            this.relative_tile.setOnClickListener(v -> {
-                isExpandible = !isExpandible;
-                notifyItemChanged(getAdapterPosition());
-            });
-        }
+        return convertView;
     }
 }

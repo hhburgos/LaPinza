@@ -22,10 +22,9 @@ import com.cninfotech.template.buyer.dashboard.BuyerSlidingImageAdapter;
 import java.util.ArrayList;
 
 public class WelcomeActivity extends AppCompatActivity implements View.OnClickListener {
-
-    Button btnSignUp;
-    CardView btnFacebook;
-    Button btnLogin;
+    private Button btnSignUp;
+    private CardView btnFacebook;
+    private Button btnLogin;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -37,13 +36,13 @@ public class WelcomeActivity extends AppCompatActivity implements View.OnClickLi
     }
 
     private void init() {
-        btnFacebook = findViewById(R.id.btnFacebookLogin);
-        btnLogin = findViewById(R.id.btnLogin);
-        btnSignUp = findViewById(R.id.btnSignUp);
+        this.btnFacebook = findViewById(R.id.btnFacebookLogin);
+        this.btnLogin = findViewById(R.id.btnLogin);
+        this.btnSignUp = findViewById(R.id.btnSignUp);
 
-        btnSignUp.setOnClickListener(this);
-        btnLogin.setOnClickListener(this);
-        btnFacebook.setOnClickListener(this);
+        this.btnSignUp.setOnClickListener(this);
+        this.btnLogin.setOnClickListener(this);
+        this.btnFacebook.setOnClickListener(this);
 
     }
 

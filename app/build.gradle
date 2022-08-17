@@ -1,5 +1,7 @@
 apply plugin: 'com.android.application'
 apply plugin: 'org.sonarqube'
+apply plugin: 'com.google.gms.google-services'
+
 
 android {
     compileSdkVersion 31
@@ -25,6 +27,8 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
+
+
 }
 
 sonarqube {
@@ -32,9 +36,18 @@ sonarqube {
         property "sonar.projectKey", "chitrakar.pratik_themeforest-android_AX3CrmkvyXZLmYUSjpwn"
         property "sonar.qualitygate.wait", true
     }
+
 }
 
+
 dependencies {
+    implementation platform('com.google.firebase:firebase-bom:30.3.2')
+    implementation 'com.google.firebase:firebase-analytics'
+    implementation group: 'com.google.firebase', name: 'firebase-auth', version: '21.0.7'
+    implementation group: 'com.google.firebase', name: 'firebase-database', version: '20.0.5'
+
+    implementation group: 'com.basgeekball', name: 'awesome-validation', version: '4.3'
+
     implementation fileTree(dir: "libs", include: ["*.jar"])
     implementation 'androidx.appcompat:appcompat:1.4.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.2'

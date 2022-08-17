@@ -21,8 +21,8 @@
                 android:id="@+id/layout_image"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:elevation="4dp"
-                android:layout_centerHorizontal="true">
+                android:layout_centerHorizontal="true"
+                android:elevation="4dp">
 
                 <androidx.cardview.widget.CardView
                     android:id="@+id/cvProfilePicture"
@@ -43,13 +43,13 @@
                     android:id="@+id/image_edit"
                     android:layout_width="@dimen/_15sdp"
                     android:layout_height="@dimen/_15sdp"
-                    android:src="@drawable/ic_edit"
-                    android:baselineAlignBottom="true"
                     android:layout_gravity="end|top"
                     android:layout_margin="@dimen/_5sdp"
+                    android:baselineAlignBottom="true"
+                    android:contentDescription="@string/todo"
                     android:elevation="5dp"
-                    app:tint="@color/colorBlack"
-                    android:contentDescription="@string/todo" />
+                    android:src="@drawable/ic_edit"
+                    app:tint="@color/colorBlack" />
             </FrameLayout>
 
             <TextView
