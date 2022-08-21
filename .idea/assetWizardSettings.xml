@@ -18,7 +18,7 @@
                                 <PersistentState>
                                   <option name="values">
                                     <map>
-                                      <entry key="url" value="file:/$PROJECT_DIR$/../../../../Luis%20Carlos/AppData/Local/Android/Sdk/icons/material/materialicons/person_remove/baseline_person_remove_24.xml" />
+                                      <entry key="url" value="file:/$PROJECT_DIR$/../../../../Luis%20Carlos/AppData/Local/Android/Sdk/icons/material/materialicons/person_search/baseline_person_search_24.xml" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -28,7 +28,7 @@
                         </option>
                         <option name="values">
                           <map>
-                            <entry key="outputName" value="ic_member_remove" />
+                            <entry key="outputName" value="ic_search_person" />
                             <entry key="sourceFile" value="C:\Users\Luis Carlos\Documents\Programacion\LaPinza" />
                           </map>
                         </option>
