@@ -8,7 +8,9 @@ public class Organizacion {
     private List<Usuario> miembros;
     private String ubicacion;
 
-    public Organizacion(String id, String titulo, List<Usuario> miembros, String ubicacion)  {
+    public Organizacion(){}
+
+    public Organizacion(String id,  List<Usuario> miembros, String titulo, String ubicacion)  {
         this.id = id;
         this.titulo = titulo;
         this.miembros = miembros;

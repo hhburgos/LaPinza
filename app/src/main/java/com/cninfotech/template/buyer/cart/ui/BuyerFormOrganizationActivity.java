@@ -167,7 +167,7 @@ public class BuyerFormOrganizationActivity extends AppCompatActivity {
         String name = this.nameEt.getText().toString();
         String street = this.streetEt.getText().toString();
 
-        Organizacion organizacion = new Organizacion(id, name, this.miembros, street);
+        Organizacion organizacion = new Organizacion(id, this.miembros, name, street);
 
         this.userDb.child(FinalVar.TABLE_NAME_ORGANIZACION).child(organizacion.getId()).setValue(organizacion);
         Toast.makeText(BuyerFormOrganizationActivity.this, getString(R.string.organization_created_ok), Toast.LENGTH_SHORT).show();

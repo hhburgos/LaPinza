@@ -4,17 +4,17 @@ import java.util.Date;
 import java.util.List;
 
 public class Torneo {
-    private int id;
+    private String id;
     private String nombre;
     private int formato;
     private List<Usuario> participantes;
     private List<Usuario> jueces;
     private List<Usuario> speakers;
     private String lugarEvento;
-    private Date fechaEvento;
-    private int idOrganizacion;
+    private String fechaEvento;
+    private String idOrganizacion;
 
-    public Torneo(String nombre, int formato, List<Usuario> participantes, List<Usuario> jueces, List<Usuario> speakers, String lugarEvento, Date fechaEvento, int idOrganizacion) {
+    public Torneo(String nombre, int formato, List<Usuario> participantes, List<Usuario> jueces, List<Usuario> speakers, String lugarEvento, String fechaEvento, String idOrganizacion) {
         this.nombre = nombre;
         this.formato = formato;
         this.participantes = participantes;
@@ -25,7 +25,7 @@ public class Torneo {
         this.idOrganizacion = idOrganizacion;
     }
 
-    public Torneo(int id, String nombre, int formato, List<Usuario> participantes, List<Usuario> jueces, List<Usuario> speakers, String lugarEvento, Date fechaEvento, int idOrganizacion) {
+    public Torneo(String id, String nombre, int formato, List<Usuario> participantes, List<Usuario> jueces, List<Usuario> speakers, String lugarEvento, String fechaEvento, String idOrganizacion) {
         this.id = id;
         this.nombre = nombre;
         this.formato = formato;
@@ -37,11 +37,11 @@ public class Torneo {
         this.idOrganizacion = idOrganizacion;
     }
 
-    public int getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(String id) {
         this.id = id;
     }
 
@@ -93,19 +93,19 @@ public class Torneo {
         this.lugarEvento = lugarEvento;
     }
 
-    public Date getFechaEvento() {
+    public String getFechaEvento() {
         return fechaEvento;
     }
 
-    public void setFechaEvento(Date fechaEvento) {
+    public void setFechaEvento(String fechaEvento) {
         this.fechaEvento = fechaEvento;
     }
 
-    public int getIdOrganizacion() {
+    public String getIdOrganizacion() {
         return idOrganizacion;
     }
 
-    public void setIdOrganizacion(int idOrganizacion) {
+    public void setIdOrganizacion(String idOrganizacion) {
         this.idOrganizacion = idOrganizacion;
     }
 }

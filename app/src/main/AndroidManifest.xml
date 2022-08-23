@@ -3,21 +3,23 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.cninfotech.template">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:name="com.cninfotech.template.Template"
         android:allowBackup="true"
+        android:hardwareAccelerated="true"
         android:icon="@mipmap/ic_launcher"
-        android:usesCleartextTraffic="true"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+
         <activity
             android:name="com.cninfotech.template.startscreen.SplashActivity"
-            android:screenOrientation="portrait"
-            android:exported="true">
+            android:exported="true"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -27,44 +29,43 @@
         <activity
             android:name=".startscreen.UserActivity"
             android:screenOrientation="portrait"
-            android:windowSoftInputMode="stateAlwaysHidden|adjustResize|adjustPan"  />
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize|adjustPan" />
         <activity
             android:name=".startscreen.WelcomeActivity"
             android:screenOrientation="portrait"
-            android:windowSoftInputMode="stateAlwaysHidden|adjustResize|adjustPan"  />
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize|adjustPan" />
         <activity
             android:name=".startscreen.WelcomeScreenActivity"
             android:screenOrientation="portrait"
-            android:windowSoftInputMode="stateAlwaysHidden|adjustResize|adjustPan"  />
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize|adjustPan" />
         <activity
             android:name=".startscreen.LoginActivity"
             android:screenOrientation="portrait"
-            android:windowSoftInputMode="stateAlwaysHidden|adjustResize|adjustPan"  />
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize|adjustPan" />
         <activity
             android:name=".startscreen.SignUpActivity"
             android:screenOrientation="portrait"
-            android:windowSoftInputMode="stateAlwaysHidden|adjustResize|adjustPan"  />
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize|adjustPan" />
         <activity
             android:name=".startscreen.ForgetPasswordActivity"
             android:screenOrientation="portrait"
-            android:windowSoftInputMode="stateAlwaysHidden|adjustResize|adjustPan"  />
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize|adjustPan" />
         <activity
             android:name=".startscreen.VerificationActivity"
             android:screenOrientation="portrait"
-            android:windowSoftInputMode="stateAlwaysHidden|adjustResize|adjustPan"  />
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize|adjustPan" />
         <activity
             android:name=".buyer.user.password.ui.ChangePasswordActivity"
             android:screenOrientation="portrait"
-            android:windowSoftInputMode="stateAlwaysHidden|adjustResize|adjustPan"  />
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize|adjustPan" />
         <activity
             android:name=".buyer.user.account.AccountActivity"
             android:screenOrientation="portrait"
-            android:windowSoftInputMode="stateAlwaysHidden|adjustResize|adjustPan"  />
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize|adjustPan" />
         <activity
             android:name=".buyer.cart.ui.BuyerEmptyCartActivity"
             android:screenOrientation="portrait"
-            android:windowSoftInputMode="stateAlwaysHidden|adjustResize|adjustPan"  />
-
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize|adjustPan" />
         <activity
             android:name=".buyer.dashboard.ui.BuyerDashboardActivity"
             android:screenOrientation="portrait"
@@ -72,15 +73,19 @@
         <activity
             android:name=".buyer.product.ui.BuyerParticularCategoryActivity"
             android:screenOrientation="portrait"
-            android:windowSoftInputMode="stateAlwaysHidden|adjustResize|adjustPan"  />
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize|adjustPan" />
         <activity
             android:name=".buyer.product.ui.BuyerProductActvity"
             android:screenOrientation="portrait"
-            android:windowSoftInputMode="stateAlwaysHidden|adjustResize|adjustPan"  />
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize|adjustPan" />
         <activity
             android:name=".buyer.cart.ui.BuyerFormOrganizationActivity"
             android:screenOrientation="portrait"
-            android:windowSoftInputMode="stateAlwaysHidden|adjustResize|adjustPan"  />
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".buyer.cart.ui.BuyerFormTournamentActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize"/>
         <activity
             android:name=".buyer.product.ui.BuyerSizeSelectorActivity"
             android:screenOrientation="portrait"
@@ -89,7 +94,7 @@
             android:name=".buyer.cart.ui.BuyerShippingActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.Base"
-            android:windowSoftInputMode="stateAlwaysHidden|adjustResize|adjustPan"  />
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize|adjustPan" />
         <activity
             android:name=".buyer.cart.ui.BuyerPaymentActivity"
             android:screenOrientation="portrait"
@@ -97,7 +102,7 @@
         <activity
             android:name=".buyer.cart.ui.BuyerSuccessPaymentActivity"
             android:screenOrientation="portrait"
-            android:windowSoftInputMode="stateAlwaysHidden|adjustResize|adjustPan"  />
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize|adjustPan" />
         <activity
             android:name=".buyer.cart.ui.BuyerCartActivity"
             android:screenOrientation="portrait"
@@ -105,12 +110,11 @@
         <activity
             android:name=".buyer.user.device.DeviceActivity"
             android:screenOrientation="portrait"
-            android:windowSoftInputMode="stateAlwaysHidden|adjustResize|adjustPan"  />
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize|adjustPan" />
         <activity
             android:name=".buyer.product.ui.BuyerProductReviewActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateAlwaysHidden|adjustResize|adjustPan" />
-
         <activity
             android:name=".admin.dashboard.AdminMainActivity"
             android:screenOrientation="portrait" />
@@ -139,7 +143,6 @@
             android:name=".admin.product.ui.AdminInventoryEditActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateAlwaysHidden|adjustResize|adjustPan" />
-
         <activity
             android:name=".delivery.DeliveryMainActivity"
             android:screenOrientation="portrait" />

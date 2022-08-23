@@ -825,4 +825,33 @@
     <string name="organization_add_member">ADD</string>
     <string name="organization_email_regex">Please set valid email</string>
     <string name="organization_email_repeat">Don\'t repeat email</string>
+
+    <!-- Tournament -->
+    <string name="tournament_title_form">TOURNAMENT\nForm</string>
+    <string name="tournament_name">Name of tournament</string>
+    <string name="tournament_name_example">Champ of hh</string>
+    <string name="tournament_format">Format</string>
+    <string name="tournament_format_example">4</string>
+    <string name="tournament_participants">Participants</string>
+    <string name="tournament_speakers">Speakers</string>
+    <string name="tournament_judges">Judges</string>
+    <string name="tournament_location">Location of tournament</string>
+    <string name="tournament_location_example">Example 123, abc 48011</string>
+    <string name="tournament_day">Event day</string>
+    <string name="tournament_day_example">23-08-2022 16:26</string>
+    <string name="tournament_create_btn">CREATE\nTOURNAMENT</string>
+    <string name="tournament_organization">Select organization</string>
+
+    <string name="tournament_validation_name">Please set valid name</string>
+    <string name="tournament_validation_format">Please set numeric greater than 1</string>
+    <string name="tournament_validation_location">Please set valid location</string>
+    <string name="tournament_validation_date">Please set valid date</string>
+
+    <string name="tournament_float_speaker_title">Add Speakers With Email</string>
+    <string name="tournament_float_judges_title">Add Judges With Email</string>
+    <string name="tournament_float_participants_title">Add Participants With Email</string>
+
+    <string name="tournament_alert_compare">The members can take only 1 rol</string>
+    <string name="tournament_organization_alert">Please set valid organization</string>
+    <string name="tournament_minimum_participant">Please set 2 participants minimum</string>
 </resources>

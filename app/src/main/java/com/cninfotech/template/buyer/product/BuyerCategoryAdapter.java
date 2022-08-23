@@ -15,6 +15,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.cninfotech.template.R;
 import com.cninfotech.template.buyer.cart.ui.BuyerFormOrganizationActivity;
+import com.cninfotech.template.buyer.cart.ui.BuyerFormTournamentActivity;
 import com.cninfotech.template.buyer.product.ui.BuyerParticularCategoryActivity;
 import com.cninfotech.template.buyer.user.account.AccountActivity;
 import com.cninfotech.template.model.Category;
@@ -66,7 +67,10 @@ public class BuyerCategoryAdapter extends RecyclerView.Adapter<BuyerCategoryAdap
                         Intent form_organization_window = new Intent(context, BuyerFormOrganizationActivity.class);
                         context.startActivity(form_organization_window);
                         break;
-                    case 1: Toast.makeText(context, String.valueOf(position), Toast.LENGTH_LONG).show(); break;
+                    case 1:
+                        Intent form_tournament_widow = new Intent(context, BuyerFormTournamentActivity.class);
+                        context.startActivity(form_tournament_widow);
+                        break;
                     case 2: Toast.makeText(context, String.valueOf(position), Toast.LENGTH_LONG).show(); break;
                     case 3: Toast.makeText(context, String.valueOf(position), Toast.LENGTH_LONG).show(); break;
 
